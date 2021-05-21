@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html lang="ch-zh ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yyMoming || 关键字：static</title>
+    <meta name="author" content="Moming">
+    <meta name="description" content="一个爱吃的小羊羊 ">
+    <meta name="keywords" content=" ">
+    <link rel="icon" href="/images/1.jpg">
+    <link rel="stylesheet" href="/css/antd.min.css">
+    
+    <link rel="stylesheet" href="/css/maiden-theme.css">
+    
+    <script src="/js/vue.js"></script>
+    <script src="/js/antd.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+    <div id="loading"
+        style="height: 100vh; width: 100%; position: fixed;display: flex;z-index: 200; justify-content: space-between;">
+        <div id="loadleft" style="width: 50%;background-color: #ffffff;transition: width 0.6s ease-out;"></div>
+        <div id="loadright" style="width: 50%;background-color: #ffffff;transition: width 0.6s ease-out;"></div>
+        <div
+            style="position: fixed; height: 100vh; width: 100%;display: flex;justify-content: center;align-items: center;">
+            <div id="loadcontent"
+                style="width:400px;height:400px;padding:50px;border-radius:50%;display:flex;justify-content:center;align-items:center;border:solid 10px#a3ddfb; text-align:center;opacity:1;transition:opacity 0.3s ease-out;">
+                <div>
+                    <h2>LOADING...</h2>
+                    <p>加载过慢请开启缓存(浏览器默认开启)</p>
+                    <div>
+                        <img src="/dancingkitty.gif" alt="loading">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="layout">
+        <transition name="into">
+            <div v-show="show_page" style="display: none;">
+                <div id="menu_show">
+                     
+<nav id="menu">
+    <div class="desktop-menu">
+        <a href="/">
+            <span class="title">yyMoming</span>
+        </a>
+        
+        <a href="/">
+            <span>
+                <a-icon type="home" theme="filled" />
+            </span>
+            <span>home</span>
+        </a>
+        
+        <a href="/about/">
+            <span>
+                <a-icon type="idcard" theme="filled" />
+            </span>
+            <span>about</span>
+        </a>
+        
+        <a href="/archives/">
+            <span>
+                <a-icon type="folder" theme="filled" />
+            </span>
+            <span>archives</span>
+        </a>
+        
+        <a href="/categories/">
+            <span>
+                <a-icon type="book" theme="filled" />
+            </span>
+            <span>categories</span>
+        </a>
+        
+        <a href="/tags/">
+            <span>
+                <a-icon type="tags" theme="filled" />
+            </span>
+            <span>tags</span>
+        </a>
+        
+    </div>
+
+    <div :class="'phone-menu ' + menu_show" id="phone-menu">
+        <div :class="'title'" @click="menu_show=!menu_show">
+            <span style="margin-right: 10px;">
+                <a-icon type="appstore" theme="filled" />
+            </span>
+            <span>yyMoming</span>
+        </div>
+        <div class="items" v-show="menu_show">
+            
+            <a href="/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="home" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">home</div>
+                </div>
+            </a>
+            
+            <a href="/about/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="idcard" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">about</div>
+                </div>
+            </a>
+            
+            <a href="/archives/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="folder" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">archives</div>
+                </div>
+            </a>
+            
+            <a href="/categories/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="book" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">categories</div>
+                </div>
+            </a>
+            
+            <a href="/tags/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="tags" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">tags</div>
+                </div>
+            </a>
+            
+        </div>
+        <div class="curtain" v-show="menu_show"></div>
+    </div>
+
+</nav>
+                </div>
+
+                <div id="main">
+                     
+<link rel="stylesheet" href="/css/post-body.css">
+<div class="article">
+    <div>
+        <h1>关键字：static </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <a-icon type="calendar" theme="filled" />
+            </span>
+            2021/5/21
+        </span>
+
+        
+        <span class="category">
+            <a href="/categories/cpp基础">
+                <span class="icon">
+                    <a-icon type="book" theme="filled" />
+                </span>
+                cpp基础
+            </a>
+        </span>
+        
+
+        
+
+        <span class="tags">
+            <span class="icon">
+                <a-icon type="tags" theme="filled" />
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/c++" style=color:#1bccbc>
+                    c++
+                </a>
+            </span>
+            
+        </span>
+        
+    </div>
+
+    <div class="content" v-pre>
+        <h2 id="关键字：static"><a href="#关键字：static" class="headerlink" title="关键字：static"></a>关键字：static</h2><span id="more"></span>
+
+<ol>
+<li><h3 id="与不同类型一起使用时，static-拥有不同的含义"><a href="#与不同类型一起使用时，static-拥有不同的含义" class="headerlink" title="与不同类型一起使用时，static 拥有不同的含义"></a>与不同类型一起使用时，static 拥有不同的含义</h3><ul>
+<li>静态变量<ul>
+<li>静态局部变量（面向过程）</li>
+<li>静态全局变量（面向过程）</li>
+<li>静态成员变量（面向对象）</li>
+</ul>
+</li>
+<li>静态函数<ul>
+<li>静态成员函数（面向对象）</li>
+<li>静态函数（面向过程）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h3 id="static：静态变量"><a href="#static：静态变量" class="headerlink" title="static：静态变量"></a>static：静态变量</h3><ul>
+<li><p>函数中的静态变量 —— 静态局部变量（面向过程）</p>
+<p>1）静态局部变量在 <strong>全局数据区分配内存</strong>（C++ 内存包括四部分：代码区，全局数据区，栈区和堆区）</p>
+<p>2）静态局部变量在<strong>程序执行到该对象的声明处时第一次被初始化</strong>，以后的函数调用将不再初始化</p>
+<p>3）静态局部变量一般在声明处初始化，如果没有显式初始化，会被程序自动初始化为0</p>
+<p>4）静态局部变量<strong>始终保存在全局数据区直到程序结束</strong>。但作用域只为局部作用域，当定义它的函数或语句块结束时，其作用域随之结束。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">test01</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">int</span> num = <span class="number">0</span>;</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;num:&quot;</span> &lt;&lt; num &lt;&lt; endl;</span><br><span class="line">	num++;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">test01</span>();</span><br><span class="line">	<span class="built_in">test01</span>();</span><br><span class="line">	<span class="built_in">test01</span>();</span><br><span class="line">&#125;</span><br><span class="line">&gt;&gt;&gt; num: <span class="number">0</span></span><br><span class="line">&gt;&gt;&gt; num: <span class="number">1</span></span><br><span class="line">&gt;&gt;&gt; num: <span class="number">2</span></span><br></pre></td></tr></table></figure></li>
+<li><p>静态全局变量（面向过程）</p>
+<p>1）该变量在 <strong>全局数据区</strong> 分配内存</p>
+<p>2）未经初始化的 <strong>静态全局变量</strong> 会被程序自动初始化为0</p>
+<p>3）静态全局变量在 <strong>声明它的整个文件内都是可见的</strong> ，在文件之外不可见，也不能被其他文件所用，其他文件中可以定义相同名字的变量，不会发生冲突。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Example 2</span></span><br><span class="line"><span class="comment">//File1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream.h&gt;</span> </span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fn</span><span class="params">()</span></span>;</span><br><span class="line"><span class="keyword">static</span> <span class="keyword">int</span> n; <span class="comment">//定义静态全局变量 </span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	n=<span class="number">20</span>;</span><br><span class="line">	cout&lt;&lt;n&lt;&lt;endl;</span><br><span class="line">	<span class="built_in">fn</span>();</span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="comment">//File2 </span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream.h&gt;</span> </span></span><br><span class="line"><span class="keyword">extern</span> <span class="keyword">int</span> n; <span class="comment">// 错误，静态全局变量不能被其他文件所用</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fn</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	n++;</span><br><span class="line">	cout&lt;&lt;n&lt;&lt;endl;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure></li>
+<li><p>静态成员变量（面向对象）</p>
+<p>1）静态成员变量是该类的 <strong>所有对象所共有</strong> 的。对于普通成员变量，每个类对象都有自己的一份拷贝。而静态成员变量一共就一份，无论这个类的对象被定义了多少个，静态成员变量只分配一次内存，由该类的所有对象共享访问。所以，静态数据成员的值对每个对象都是一样的，它的值可以更新</p>
+<p>2）<strong>数据共享</strong>：静态数据成员在全局数据区分配内存，由本类的所有对象共享，所以，它<strong>不属于特定的类对象，不占用对象的内存</strong>，而是在所有对象之外开辟内存，在没有产生类对象时其作用域就可见。因此，<strong>在没有类的实例存在时，静态成员变量就已经存在</strong>，我们就可以操作它</p>
+<p>3）<strong>类内类外初始化</strong>：静态成员变量存储在全局数据区。<strong>静态成员变量必须初始化</strong>，而且只能在<strong>类体外</strong>进行。否则，编译能通过，链接不能通过。但是 static 成员常量可以类内初始化（static const int s = 20;）</p>
+<ol start="4">
+<li><strong>编译分配内存，运行结束时释放</strong>：static 成员变量和普通 static 变量一样，<strong>编译时</strong>在静态数据区分配内存，<strong>程序结束时释放</strong>。</li>
+</ol>
+<p>5）静态数据成员初始化与一般数据成员初始化不同。初始化时可以不加 static，但必须要有数据类型。被 private、protected、public 修饰的 static 成员变量都可以用这种方式初始化。静态数据成员初始化的格式为：<br>$$<br>＜数据类型＞＜类名＞::＜静态数据成员名＞=＜值＞<br>$$<br>6）<strong>类的静态成员变量访问形式</strong>：</p>
+<ul>
+<li><p>$$<br>＜类对象名＞.＜静态数据成员名＞<br>$$</p>
+</li>
+<li><p>$$<br>＜类类型名＞::＜静态数据成员名＞<br>$$</p>
+</li>
+</ul>
+<p>7）<strong>遵循一般的访问规则</strong>：静态数据成员和普通数据成员一样遵从public,protected,private访问规则</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 普通对象</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Apple</span> </span></span><br><span class="line"><span class="class">&#123;</span> </span><br><span class="line">    <span class="keyword">int</span> i; </span><br><span class="line">    <span class="keyword">public</span>: </span><br><span class="line">        <span class="built_in">Apple</span>() </span><br><span class="line">        &#123; </span><br><span class="line">            i = <span class="number">0</span>; </span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;Inside Constructor\n&quot;</span>; </span><br><span class="line">        &#125; </span><br><span class="line">        ~<span class="built_in">Apple</span>() </span><br><span class="line">        &#123; </span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;Inside Destructor\n&quot;</span>; </span><br><span class="line">        &#125; </span><br><span class="line">&#125;; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123; </span><br><span class="line">    <span class="keyword">int</span> x = <span class="number">0</span>; </span><br><span class="line">    <span class="keyword">if</span> (x==<span class="number">0</span>) </span><br><span class="line">    &#123; </span><br><span class="line">        Apple obj; </span><br><span class="line">    &#125; </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;End of main\n&quot;</span>; </span><br><span class="line">&#125; </span><br><span class="line"><span class="comment">// 输出</span></span><br><span class="line">&gt;&gt;&gt; Inside Constructor</span><br><span class="line">&gt;&gt;&gt; Inside Destructor</span><br><span class="line">&gt;&gt;&gt; End of main</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 静态对象</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Apple</span> </span></span><br><span class="line"><span class="class">&#123;</span> </span><br><span class="line">    <span class="keyword">int</span> i; </span><br><span class="line">    <span class="keyword">public</span>: </span><br><span class="line">        <span class="built_in">Apple</span>() </span><br><span class="line">        &#123; </span><br><span class="line">            i = <span class="number">0</span>; </span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;Inside Constructor\n&quot;</span>; </span><br><span class="line">        &#125; </span><br><span class="line">        ~<span class="built_in">Apple</span>() </span><br><span class="line">        &#123; </span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;Inside Destructor\n&quot;</span>; </span><br><span class="line">        &#125; </span><br><span class="line">&#125;; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123; </span><br><span class="line">    <span class="keyword">int</span> x = <span class="number">0</span>; </span><br><span class="line">    <span class="keyword">if</span> (x==<span class="number">0</span>) </span><br><span class="line">    &#123; </span><br><span class="line">        <span class="keyword">static</span> Apple obj; </span><br><span class="line">    &#125; </span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;End of main\n&quot;</span>; </span><br><span class="line">&#125; </span><br><span class="line"><span class="comment">// 输出</span></span><br><span class="line">&gt;&gt;&gt; Inside Constructor</span><br><span class="line">&gt;&gt;&gt; End of main</span><br><span class="line">&gt;&gt;&gt; Inside Destructor</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><h3 id="static：静态函数"><a href="#static：静态函数" class="headerlink" title="static：静态函数"></a>static：静态函数</h3><ul>
+<li>类中的静态函数（面向对象）</li>
+</ul>
+<p>1）静态成员函数与静态成员变量一样，都是为 <strong>类</strong> 服务，而不是某一个类的具体对象服务。</p>
+<p>2）<strong>没有 this 指针，不能访问非静态成员</strong>：普通成员函数一般都隐含了 <strong>“this”</strong> 指针，<strong>this</strong> 指针指向类的对象，因为普通成员函数总是具体的属于某一个具体对象，当函数被调用时，系统会吧当前对象的起始地址赋给 <strong>this</strong> 指针。与普通函数相比，静态成员函数属于类本身，不属于某个具体的实例对象，因此不具有 <strong>this</strong> 指针。也正因为没有指向具体对象，因此<strong>无法访问</strong>属于某一对象的非静态成员变量和非静态成员函数。</p>
+<p>3）出现在类体外的函数定义不能指定关键字 <strong>static</strong></p>
+<p>4）<strong>非静态成员函数可以任意的访问</strong>静态成员函数和静态数据成员</p>
+<p>5）由于没有this指针的额外开销，静态成员函数与类的全局函数相比速度上会稍快</p>
+<p>6）静态成员函数的调用</p>
+<p>​        类名调用<br>$$<br>＜类名＞::＜静态成员函数名＞<br>$$<br>​        类成员调用：操作符（.）和（-&gt;）</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span>&#123;</span></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">   <span class="keyword">char</span> *name;</span><br><span class="line">   <span class="keyword">int</span> age;</span><br><span class="line">   <span class="keyword">float</span> score;</span><br><span class="line">   <span class="keyword">static</span> <span class="keyword">int</span> num;  	<span class="comment">//学生人数</span></span><br><span class="line">   <span class="keyword">static</span> <span class="keyword">float</span> total;  <span class="comment">//总分</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">   <span class="built_in">Student</span>(<span class="keyword">char</span> *, <span class="keyword">int</span>, <span class="keyword">float</span>);</span><br><span class="line">   <span class="function"><span class="keyword">void</span> <span class="title">say</span><span class="params">()</span></span>;</span><br><span class="line">   <span class="function"><span class="keyword">static</span> <span class="keyword">float</span> <span class="title">getAverage</span><span class="params">()</span></span>;  <span class="comment">//静态成员函数，用来获得平均成绩</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> Student::num = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">float</span> Student::total = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">Student::<span class="built_in">Student</span>(<span class="keyword">char</span> *name, <span class="keyword">int</span> age, <span class="keyword">float</span> score)</span><br><span class="line">&#123;</span><br><span class="line">   <span class="keyword">this</span>-&gt;name = name;</span><br><span class="line">   <span class="keyword">this</span>-&gt;age = age;</span><br><span class="line">   <span class="keyword">this</span>-&gt;score = score;</span><br><span class="line">   num++;</span><br><span class="line">   total += score;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Student::say</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   cout&lt;&lt;name&lt;&lt;<span class="string">&quot;的年龄是 &quot;</span>&lt;&lt;age&lt;&lt;<span class="string">&quot;，成绩是 &quot;</span>&lt;&lt;score&lt;&lt;<span class="string">&quot;（当前共&quot;</span>&lt;&lt;num&lt;&lt;<span class="string">&quot;名学生）&quot;</span>&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">float</span> <span class="title">Student::getAverage</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   <span class="keyword">return</span> total / num;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   (<span class="keyword">new</span> <span class="built_in">Student</span>(<span class="string">&quot;小明&quot;</span>, <span class="number">15</span>, <span class="number">90</span>))-&gt;<span class="built_in">say</span>();</span><br><span class="line">   (<span class="keyword">new</span> <span class="built_in">Student</span>(<span class="string">&quot;李磊&quot;</span>, <span class="number">16</span>, <span class="number">80</span>))-&gt;<span class="built_in">say</span>();</span><br><span class="line">   (<span class="keyword">new</span> <span class="built_in">Student</span>(<span class="string">&quot;张华&quot;</span>, <span class="number">16</span>, <span class="number">99</span>))-&gt;<span class="built_in">say</span>();</span><br><span class="line">   (<span class="keyword">new</span> <span class="built_in">Student</span>(<span class="string">&quot;王康&quot;</span>, <span class="number">14</span>, <span class="number">60</span>))-&gt;<span class="built_in">say</span>();</span><br><span class="line">   cout&lt;&lt;<span class="string">&quot;平均成绩为 &quot;</span>&lt;&lt;Student::<span class="built_in">getAverage</span>()&lt;&lt;endl;</span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">运行结果：</span><br><span class="line">小明的年龄是 <span class="number">15</span>，成绩是 <span class="number">90</span>（当前共<span class="number">1</span>名学生）</span><br><span class="line">李磊的年龄是 <span class="number">16</span>，成绩是 <span class="number">80</span>（当前共<span class="number">2</span>名学生）</span><br><span class="line">张华的年龄是 <span class="number">16</span>，成绩是 <span class="number">99</span>（当前共<span class="number">3</span>名学生）</span><br><span class="line">王康的年龄是 <span class="number">14</span>，成绩是 <span class="number">60</span>（当前共<span class="number">4</span>名学生）</span><br><span class="line">平均成绩为 <span class="number">82.25</span></span><br></pre></td></tr></table></figure>
+
+<p>**<font color='green'>Tips：</font>**在使用包含静态成员的类时，有时候会调用拷贝构造函数生成临时的隐藏的类对象，而这个临时对象在消亡时会调用析构函数有可能会对静态变量做操作（例如total_num–），可是这些对象在生成时却没有执行构造函数中的total_num++的操作。解决方案是为这个类写一个拷贝构造函数，在该拷贝构造函数中完成total_num++的操作。</p>
+</li>
+</ol>
+<ul>
+<li><p>​    普通静态函数（面向过程）</p>
+<p>1）在函数的返回类型前加上 static 关键字,函数即被定义为静态函数。静态函数与普通函数不同，它只能在声明它的文件当中可见，不能被其它文件使用。</p>
+<p>2）其它文件中可以定义相同名字的函数，不会发生冲突；</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">fn</span><span class="params">()</span></span>;<span class="comment">//声明静态函数</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">fn</span>();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fn</span><span class="params">()</span><span class="comment">//定义静态函数</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n=<span class="number">10</span>;</span><br><span class="line">	cout&lt;&lt;n&lt;&lt;endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+    </div>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <div id="comment">
+        <div id="gitalk-container">
+        </div>
+    </div>
+    
+</div>
+                     
+<footer id="footer">
+    <div class="footer-wrap">
+        <div>
+            © 2021 - 2021 yyMoming
+            <span class="footer-icon">
+                <a-icon type="flag" theme="filled" /></span>
+            @Moming
+        </div>
+        <div></div>
+        <div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo Engine</a> & <a
+                target="_blank" rel="noopener" href="https://github.com/korilin/hexo-theme-particle">Particle Theme</a></div>
+        
+    </div>
+
+</footer>
+
+<script src="/js/highlight.min.js"></script>
+<script src="/js/particle.js"></script>
+                </div>
+            </div>
+        </transition>
+    </div>
+
+    <script>
+    new Vue({
+        el: "#layout",
+        data: {
+            show_page: false,
+            onload_menu: false,
+            menu_show: false,
+            card_top: 100
+        },
+        created: function () {
+            var that = this
+            window.onload = function () {
+                that.show_page = true
+                document.getElementById("loadcontent").style.opacity = 0
+                setTimeout(function () {
+                    document.getElementById("loadleft").style.width = 0
+                    document.getElementById("loadright").style.width = 0
+                }, 300)
+                setTimeout(function () {
+                    document.getElementById("loading").style = "display:none"
+                }, 600)
+            }
+        },
+        mounted: function () {
+            var that = this
+            window.addEventListener('scroll', function (e) {
+                that.menu_show = false
+            })
+        },
+        methods: {
+            home_click: function () {
+                window.scrollTo({
+                    top: window.innerHeight - 80,
+                    behavior: "smooth",
+                });
+            }
+        }
+    })
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: 'hexo-theme-particle',      // The repository of store comments,
+        owner: 'korilin',
+        admin: ['korilin'],
+        language: 'zh-CN',
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: true  // Facebook-like distraction free mode
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="ch-zh ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yyMoming || 关键字：union</title>
+    <meta name="author" content="Moming">
+    <meta name="description" content="一个爱吃的小羊羊 ">
+    <meta name="keywords" content=" ">
+    <link rel="icon" href="/images/1.jpg">
+    <link rel="stylesheet" href="/css/antd.min.css">
+    
+    <link rel="stylesheet" href="/css/maiden-theme.css">
+    
+    <script src="/js/vue.js"></script>
+    <script src="/js/antd.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+    <div id="loading"
+        style="height: 100vh; width: 100%; position: fixed;display: flex;z-index: 200; justify-content: space-between;">
+        <div id="loadleft" style="width: 50%;background-color: #ffffff;transition: width 0.6s ease-out;"></div>
+        <div id="loadright" style="width: 50%;background-color: #ffffff;transition: width 0.6s ease-out;"></div>
+        <div
+            style="position: fixed; height: 100vh; width: 100%;display: flex;justify-content: center;align-items: center;">
+            <div id="loadcontent"
+                style="width:400px;height:400px;padding:50px;border-radius:50%;display:flex;justify-content:center;align-items:center;border:solid 10px#a3ddfb; text-align:center;opacity:1;transition:opacity 0.3s ease-out;">
+                <div>
+                    <h2>LOADING...</h2>
+                    <p>加载过慢请开启缓存(浏览器默认开启)</p>
+                    <div>
+                        <img src="/dancingkitty.gif" alt="loading">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="layout">
+        <transition name="into">
+            <div v-show="show_page" style="display: none;">
+                <div id="menu_show">
+                     
+<nav id="menu">
+    <div class="desktop-menu">
+        <a href="/">
+            <span class="title">yyMoming</span>
+        </a>
+        
+        <a href="/">
+            <span>
+                <a-icon type="home" theme="filled" />
+            </span>
+            <span>home</span>
+        </a>
+        
+        <a href="/about/">
+            <span>
+                <a-icon type="idcard" theme="filled" />
+            </span>
+            <span>about</span>
+        </a>
+        
+        <a href="/archives/">
+            <span>
+                <a-icon type="folder" theme="filled" />
+            </span>
+            <span>archives</span>
+        </a>
+        
+        <a href="/categories/">
+            <span>
+                <a-icon type="book" theme="filled" />
+            </span>
+            <span>categories</span>
+        </a>
+        
+        <a href="/tags/">
+            <span>
+                <a-icon type="tags" theme="filled" />
+            </span>
+            <span>tags</span>
+        </a>
+        
+    </div>
+
+    <div :class="'phone-menu ' + menu_show" id="phone-menu">
+        <div :class="'title'" @click="menu_show=!menu_show">
+            <span style="margin-right: 10px;">
+                <a-icon type="appstore" theme="filled" />
+            </span>
+            <span>yyMoming</span>
+        </div>
+        <div class="items" v-show="menu_show">
+            
+            <a href="/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="home" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">home</div>
+                </div>
+            </a>
+            
+            <a href="/about/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="idcard" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">about</div>
+                </div>
+            </a>
+            
+            <a href="/archives/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="folder" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">archives</div>
+                </div>
+            </a>
+            
+            <a href="/categories/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="book" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">categories</div>
+                </div>
+            </a>
+            
+            <a href="/tags/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="tags" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">tags</div>
+                </div>
+            </a>
+            
+        </div>
+        <div class="curtain" v-show="menu_show"></div>
+    </div>
+
+</nav>
+                </div>
+
+                <div id="main">
+                     
+<link rel="stylesheet" href="/css/post-body.css">
+<div class="article">
+    <div>
+        <h1>关键字：union </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <a-icon type="calendar" theme="filled" />
+            </span>
+            2021/5/21
+        </span>
+
+        
+        <span class="category">
+            <a href="/categories/cpp基础">
+                <span class="icon">
+                    <a-icon type="book" theme="filled" />
+                </span>
+                cpp基础
+            </a>
+        </span>
+        
+
+        
+
+        <span class="tags">
+            <span class="icon">
+                <a-icon type="tags" theme="filled" />
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/c++" style=color:#1bccbc>
+                    c++
+                </a>
+            </span>
+            
+        </span>
+        
+    </div>
+
+    <div class="content" v-pre>
+        <h2 id="关键字：union"><a href="#关键字：union" class="headerlink" title="关键字：union"></a>关键字：union</h2><span id="more"></span>
+
+<h4 id="1-union（联合）：是一种特殊的类，一个union可以有多个数据成员"><a href="#1-union（联合）：是一种特殊的类，一个union可以有多个数据成员" class="headerlink" title="1. union（联合）：是一种特殊的类，一个union可以有多个数据成员"></a>1. union（联合）：是一种特殊的类，一个union可以有多个数据成员</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">union</span> <span class="title">Token</span>&#123;</span></span><br><span class="line">   <span class="keyword">char</span> cval;</span><br><span class="line">   <span class="keyword">int</span> ival;</span><br><span class="line">   <span class="keyword">double</span> dval;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 定义了一个名为 Token 的联合，该联合包含 3 个数据成员</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>特点：<ul>
+<li>默认访问控制符为 public</li>
+<li>可以含有构造函数、析构函数</li>
+<li>不能含有引用类型的成员</li>
+<li>不能继承自其他类，不能作为基类</li>
+<li>不能含有虚函数</li>
+<li>匿名 union 在定义所在作用域可直接访问 union 成员</li>
+<li>匿名 union 不能包含 protected 成员或 private 成员</li>
+<li>全局匿名联合必须是静态（static）的</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-union的作用"><a href="#2-union的作用" class="headerlink" title="2. union的作用"></a>2. union的作用</h4><ul>
+<li>互斥赋值：在任意时刻，<code>联合中只能有一个数据成员可以有值</code>。当给联合中某个成员赋值之后，该联合中的其它成员就变成<strong>未定义状态</strong>了。</li>
+</ul>
+<blockquote>
+<p>初始化</p>
+</blockquote>
+<p><img src="F:/YWM_work/C++/基础/images/20180626155345986.png"></p>
+<p>红色方框内的数据即为token所占内存数据。<u>因为token中长度最大的变量是double类型，所以token的长度是8个字节</u>。</p>
+<blockquote>
+<p>cval 赋值</p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">token.cval = <span class="string">&#x27;a&#x27;</span>; <span class="comment">// 为token赋值</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="F:/YWM_work/C++/基础/images/cval.png"></p>
+<p>此时，token所占内存的第一个字节的值变为0x61，即字符’a’。</p>
+<blockquote>
+<p>ival 赋值</p>
+</blockquote>
+<p><img src="F:/YWM_work/C++/基础/images/ival.png"></p>
+<p>此时，token所占内存的前四个字节变为0x00000001，即为数字1。在对token的ival赋值之后，cval的值就变为了0x01，实际上就没有意义了。</p>
+<ul>
+<li>为成员指定长度</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">union</span> <span class="title">U</span> &#123;</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">unsigned</span> <span class="keyword">short</span> <span class="keyword">int</span> aa;</span><br><span class="line"> </span><br><span class="line"><span class="class"><span class="keyword">struct</span> &#123;</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">unsigned</span> <span class="keyword">int</span> bb : <span class="number">7</span>;<span class="comment">//(bit 0-6)</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">unsigned</span> <span class="keyword">int</span> cc : <span class="number">6</span>;<span class="comment">//(bit 7-12)</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">unsigned</span> <span class="keyword">int</span> dd : <span class="number">3</span>;<span class="comment">//(bit 13-15)</span></span><br><span class="line"> </span><br><span class="line">&#125;;</span><br><span class="line"> </span><br><span class="line">&#125; u;</span><br></pre></td></tr></table></figure>
+
+<p>以上代码定义了一个名为U的联合，并且定义了U的变量u。联合U包含两个成员，一个是unsigned short int类型的变量，其大小为2个字节；另一个是一个自定义结构，该自定义结构中包含了3个unsigned int类型的变量。需要注意的是，每个unsigned int类型的变量的大小并不是默认的4个字节，而是通过冒号操作符指定了其大小，该大小的单位是比特。所以，联合u的大小是2个字节。</p>
+<blockquote>
+<p>之后，对联合u中的aa进行赋值u</p>
+</blockquote>
+<p><img src="F:/YWM_work/C++/基础/images/u.png"></p>
+<p>此时，u.bb所处的位置是0-6比特；u.cc所处的位置是7-12比特；u.dd所处的位置是13-15比特</p>
+<p><img src="images/bbddcc.png"></p>
+
+    </div>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <div id="comment">
+        <div id="gitalk-container">
+        </div>
+    </div>
+    
+</div>
+                     
+<footer id="footer">
+    <div class="footer-wrap">
+        <div>
+            © 2021 - 2021 yyMoming
+            <span class="footer-icon">
+                <a-icon type="flag" theme="filled" /></span>
+            @Moming
+        </div>
+        <div></div>
+        <div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo Engine</a> & <a
+                target="_blank" rel="noopener" href="https://github.com/korilin/hexo-theme-particle">Particle Theme</a></div>
+        
+    </div>
+
+</footer>
+
+<script src="/js/highlight.min.js"></script>
+<script src="/js/particle.js"></script>
+                </div>
+            </div>
+        </transition>
+    </div>
+
+    <script>
+    new Vue({
+        el: "#layout",
+        data: {
+            show_page: false,
+            onload_menu: false,
+            menu_show: false,
+            card_top: 100
+        },
+        created: function () {
+            var that = this
+            window.onload = function () {
+                that.show_page = true
+                document.getElementById("loadcontent").style.opacity = 0
+                setTimeout(function () {
+                    document.getElementById("loadleft").style.width = 0
+                    document.getElementById("loadright").style.width = 0
+                }, 300)
+                setTimeout(function () {
+                    document.getElementById("loading").style = "display:none"
+                }, 600)
+            }
+        },
+        mounted: function () {
+            var that = this
+            window.addEventListener('scroll', function (e) {
+                that.menu_show = false
+            })
+        },
+        methods: {
+            home_click: function () {
+                window.scrollTo({
+                    top: window.innerHeight - 80,
+                    behavior: "smooth",
+                });
+            }
+        }
+    })
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: 'hexo-theme-particle',      // The repository of store comments,
+        owner: 'korilin',
+        admin: ['korilin'],
+        language: 'zh-CN',
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: true  // Facebook-like distraction free mode
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+</body>
+
+</html>

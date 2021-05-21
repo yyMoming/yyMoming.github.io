@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>yyMoming || categories</title>
+    <title>yyMoming || 关键字：constexpr</title>
     <meta name="author" content="Moming">
     <meta name="description" content="一个爱吃的小羊羊 ">
     <meta name="keywords" content=" ">
@@ -150,29 +150,88 @@
 
                 <div id="main">
                      
-<div class="categories-tags">
-    
-    <div class="all-s">
+<link rel="stylesheet" href="/css/post-body.css">
+<div class="article">
+    <div>
+        <h1>关键字：constexpr </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <a-icon type="calendar" theme="filled" />
+            </span>
+            2021/5/21
+        </span>
+
         
-        
-        <span>
-            <a href="/categories/cpp基础/" style=background:#00bcd4>
+        <span class="category">
+            <a href="/categories/cpp基础">
                 <span class="icon">
-                    <a-icon type="book" theme="filled" /></span>
+                    <a-icon type="book" theme="filled" />
+                </span>
                 cpp基础
             </a>
         </span>
         
+
+        
+
+        <span class="tags">
+            <span class="icon">
+                <a-icon type="tags" theme="filled" />
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/c++" style=color:#879cff>
+                    c++
+                </a>
+            </span>
+            
+        </span>
         
     </div>
-    <div id="archives">
-        
+
+    <div class="content" v-pre>
+        <h2 id="关键字：constexpr"><a href="#关键字：constexpr" class="headerlink" title="关键字：constexpr"></a>关键字：constexpr</h2><span id="more"></span>
+
+<h3 id="1-constexpr：C-11中新增加的，用于指示常量表达式的关键字"><a href="#1-constexpr：C-11中新增加的，用于指示常量表达式的关键字" class="headerlink" title="1.  constexpr：C++ 11中新增加的，用于指示常量表达式的关键字"></a>1.  constexpr：C++ 11中新增加的，用于指示常量表达式的关键字</h3><p>☆ <strong>const</strong> 和 <strong>constexpr</strong> 都可以用来<strong>修饰对象和函数</strong></p>
+<ul>
+<li><p><strong>const</strong> 和 <strong>constexpr</strong> 的区别：</p>
+<ul>
+<li><p><strong>const</strong> 修饰一个<u>对象表示它是常量</u>：对象一经初始化后就不会再变动。</p>
+<ul>
+<li>const 只能用于非静态成员的函数而不是所有函数，它保证成员函数不修改任何非静态数据。</li>
+</ul>
+</li>
+<li><p><strong>constexpr</strong> 修饰一个<u>常量表达式</u> </p>
+<ul>
+<li><p>constexpr 可以用于含参和无参函数。constexpr 函数适用于常量表达式，只有在下面的情况下编译器才会接受 constexpr 函数：</p>
+<p>1）函数体必须足够简单，除了typedef和静态元素，只允许有return语句。如构造函数只能有初始化列表，typedef和静态元素 (实际上在C++14标准中已经允许定义语句存在于 constexpr 函数体内了)</p>
+<p>2）参数和返回值必须是字面值类型</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-常量表达式"><a href="#2-常量表达式" class="headerlink" title="2. 常量表达式"></a>2. 常量表达式</h3><ul>
+<li><p>必须在编译阶段可以被识别。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">int</span> N&gt;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">fixed_size_list</span></span></span><br><span class="line"><span class="class">&#123;</span> <span class="comment">/*...*/</span> &#125;;</span><br><span class="line"></span><br><span class="line">fixed_size_list&lt;X&gt; mylist;     <span class="comment">// &lt;-- X必须是字面值类型</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> numbers[X];   <span class="comment">// &lt;-- X必须是字面值类型</span></span><br></pre></td></tr></table></figure>
+
+<p><font color="green"><strong>Tips:</strong></font> 字面值类型包括 算数类型（整形和浮点型）、引用和指针。某些自定义的类也属于字面值类型。</p>
+</li>
+</ul>
+
     </div>
-    <script>
-        new Vue({
-            el: '#archives'
-        })
-    </script>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <div id="comment">
+        <div id="gitalk-container">
+        </div>
+    </div>
+    
 </div>
                      
 <footer id="footer">
@@ -236,6 +295,21 @@
             }
         }
     })
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: 'hexo-theme-particle',      // The repository of store comments,
+        owner: 'korilin',
+        admin: ['korilin'],
+        language: 'zh-CN',
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: true  // Facebook-like distraction free mode
+    })
+    gitalk.render('gitalk-container')
 </script>
 
 </body>

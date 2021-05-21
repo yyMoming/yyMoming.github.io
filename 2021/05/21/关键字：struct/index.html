@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="ch-zh ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yyMoming || 关键字：struct</title>
+    <meta name="author" content="Moming">
+    <meta name="description" content="一个爱吃的小羊羊 ">
+    <meta name="keywords" content=" ">
+    <link rel="icon" href="/images/1.jpg">
+    <link rel="stylesheet" href="/css/antd.min.css">
+    
+    <link rel="stylesheet" href="/css/maiden-theme.css">
+    
+    <script src="/js/vue.js"></script>
+    <script src="/js/antd.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+    <div id="loading"
+        style="height: 100vh; width: 100%; position: fixed;display: flex;z-index: 200; justify-content: space-between;">
+        <div id="loadleft" style="width: 50%;background-color: #ffffff;transition: width 0.6s ease-out;"></div>
+        <div id="loadright" style="width: 50%;background-color: #ffffff;transition: width 0.6s ease-out;"></div>
+        <div
+            style="position: fixed; height: 100vh; width: 100%;display: flex;justify-content: center;align-items: center;">
+            <div id="loadcontent"
+                style="width:400px;height:400px;padding:50px;border-radius:50%;display:flex;justify-content:center;align-items:center;border:solid 10px#a3ddfb; text-align:center;opacity:1;transition:opacity 0.3s ease-out;">
+                <div>
+                    <h2>LOADING...</h2>
+                    <p>加载过慢请开启缓存(浏览器默认开启)</p>
+                    <div>
+                        <img src="/dancingkitty.gif" alt="loading">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="layout">
+        <transition name="into">
+            <div v-show="show_page" style="display: none;">
+                <div id="menu_show">
+                     
+<nav id="menu">
+    <div class="desktop-menu">
+        <a href="/">
+            <span class="title">yyMoming</span>
+        </a>
+        
+        <a href="/">
+            <span>
+                <a-icon type="home" theme="filled" />
+            </span>
+            <span>home</span>
+        </a>
+        
+        <a href="/about/">
+            <span>
+                <a-icon type="idcard" theme="filled" />
+            </span>
+            <span>about</span>
+        </a>
+        
+        <a href="/archives/">
+            <span>
+                <a-icon type="folder" theme="filled" />
+            </span>
+            <span>archives</span>
+        </a>
+        
+        <a href="/categories/">
+            <span>
+                <a-icon type="book" theme="filled" />
+            </span>
+            <span>categories</span>
+        </a>
+        
+        <a href="/tags/">
+            <span>
+                <a-icon type="tags" theme="filled" />
+            </span>
+            <span>tags</span>
+        </a>
+        
+    </div>
+
+    <div :class="'phone-menu ' + menu_show" id="phone-menu">
+        <div :class="'title'" @click="menu_show=!menu_show">
+            <span style="margin-right: 10px;">
+                <a-icon type="appstore" theme="filled" />
+            </span>
+            <span>yyMoming</span>
+        </div>
+        <div class="items" v-show="menu_show">
+            
+            <a href="/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="home" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">home</div>
+                </div>
+            </a>
+            
+            <a href="/about/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="idcard" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">about</div>
+                </div>
+            </a>
+            
+            <a href="/archives/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="folder" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">archives</div>
+                </div>
+            </a>
+            
+            <a href="/categories/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="book" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">categories</div>
+                </div>
+            </a>
+            
+            <a href="/tags/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="tags" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">tags</div>
+                </div>
+            </a>
+            
+        </div>
+        <div class="curtain" v-show="menu_show"></div>
+    </div>
+
+</nav>
+                </div>
+
+                <div id="main">
+                     
+<link rel="stylesheet" href="/css/post-body.css">
+<div class="article">
+    <div>
+        <h1>关键字：struct </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <a-icon type="calendar" theme="filled" />
+            </span>
+            2021/5/21
+        </span>
+
+        
+        <span class="category">
+            <a href="/categories/cpp基础">
+                <span class="icon">
+                    <a-icon type="book" theme="filled" />
+                </span>
+                cpp基础
+            </a>
+        </span>
+        
+
+        
+
+        <span class="tags">
+            <span class="icon">
+                <a-icon type="tags" theme="filled" />
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/c++" style=color:#ff7d73>
+                    c++
+                </a>
+            </span>
+            
+        </span>
+        
+    </div>
+
+    <div class="content" v-pre>
+        <h1 id="关键字：struct"><a href="#关键字：struct" class="headerlink" title="关键字：struct"></a>关键字：struct</h1><span id="more"></span>
+
+<h3 id="1-struct介绍"><a href="#1-struct介绍" class="headerlink" title="1. struct介绍"></a>1. struct介绍</h3><ul>
+<li><p>C 中的 struct</p>
+<blockquote>
+<ul>
+<li><p>在C中struct只单纯的用作数据的复合类型，也就是说，在结构体声明中只能将数据成员放在里面，而不能将函数放在里面。</p>
+</li>
+<li><p>在C结构体声明中不能使用C++访问修饰符，如：<code>public</code>、<code>protected</code>、<code>private</code> 而在C++中可以使用。</p>
+</li>
+<li><p>在C中定义结构体变量，如果使用了下面定义必须加struct。struct base xx;</p>
+</li>
+<li><p>C的结构体不能继承（没有这一概念）。</p>
+</li>
+<li><p>若结构体的名字与函数名相同，可以正常运行且正常的调用！例如：可以定义与 struct Base 不冲突的 void Base() {}。</p>
+</li>
+</ul>
+</blockquote>
+</li>
+<li><p>C++ 中的 struct</p>
+<blockquote>
+<ul>
+<li>C++结构体中不仅可以定义数据，还可以定义函数。</li>
+<li>C++结构体中可以使用访问修饰符。</li>
+<li>C++结构体使用可以直接使用不带struct。</li>
+<li>C++可继承</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>情形1：不使用 <code>typedef</code> 定义结构体别名</p>
+</blockquote>
+<p>​    1）未添加同名函数时：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Student</span> &#123;</span></span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line">Struct Student s; <span class="comment">//ok</span></span><br><span class="line">Student s;  <span class="comment">//ok</span></span><br></pre></td></tr></table></figure>
+
+<p>​    2）包含同名函数时</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Student</span> &#123;</span></span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"><span class="built_in">Student</span>()&#123;&#125;</span><br><span class="line">Struct Student s; <span class="comment">//ok</span></span><br><span class="line">Student s;  <span class="comment">//error</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>情形2：使用 <code>typedef</code> 定义结构体别名</p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Base1</span> &#123;</span>         </span><br><span class="line">    <span class="keyword">int</span> v1;</span><br><span class="line"><span class="comment">//    private:   //error!</span></span><br><span class="line">        <span class="keyword">int</span> v3;</span><br><span class="line">    <span class="keyword">public</span>:     <span class="comment">//显示声明public</span></span><br><span class="line">        <span class="keyword">int</span> v2;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span>&#123;       </span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%s\n&quot;</span>,<span class="string">&quot;hello world&quot;</span>);</span><br><span class="line">    &#125;;    </span><br><span class="line">&#125;B;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">B</span><span class="params">()</span> </span>&#123;&#125;  <span class="comment">//error! 符号 &quot;B&quot; 已经被定义为一个 &quot;struct Base1&quot; 的别名</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="2-C-中的-struct"><a href="#2-C-中的-struct" class="headerlink" title="2.C++ 中的 struct"></a>2.C++ 中的 struct</h3><blockquote>
+<p>C++ 中的 struct 对 C 中的 struct 进行了扩充，它已经不再只是一个包含不同数据类型的数据结构了，它已经获取了太多的功能。</p>
+<ul>
+<li>struct 能包含成员函数了</li>
+<li>struct 能继承了</li>
+<li>struct 能实现多态了</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>class 和 struct 的本质区别是：<strong>默认的继承访问权限</strong>，<strong>struct是public的，class是private的。</strong></p>
+<ul>
+<li>“<strong>class”这个关键字还用于定义模板参数，就像“typename</strong>”。</li>
+<li><strong>没有构造函数或虚函数的 struct 可以在定义的时候用{}赋初值。</strong><br>（<strong>因为加入这样的函数，使得类的内部结构发生了变化。而加入一个普通的成员函数呢？你会发现{}依旧可用。其实你可以将普通的函数理解成对数据结构的一种算法，这并不打破它数据结构的特性。</strong>）</li>
+</ul>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">A</span>&#123;</span>&#125;；<span class="class"><span class="keyword">class</span> <span class="title">B</span> :</span> A&#123;&#125;; <span class="comment">//private继承</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">C</span> :</span> B&#123;&#125;； <span class="comment">//public继承</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">A</span> //定义一个<span class="keyword">struct</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">   <span class="keyword">char</span> c1;</span><br><span class="line">   <span class="keyword">int</span> n2;</span><br><span class="line">   <span class="keyword">double</span> db3;</span><br><span class="line">&#125;;</span><br><span class="line">A a=&#123;<span class="string">&#x27;p&#x27;</span>, <span class="number">7</span>, <span class="number">3.1415926</span>&#125;; <span class="comment">//定义时直接赋值</span></span><br></pre></td></tr></table></figure>
+
+
+    </div>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <div id="comment">
+        <div id="gitalk-container">
+        </div>
+    </div>
+    
+</div>
+                     
+<footer id="footer">
+    <div class="footer-wrap">
+        <div>
+            © 2021 - 2021 yyMoming
+            <span class="footer-icon">
+                <a-icon type="flag" theme="filled" /></span>
+            @Moming
+        </div>
+        <div></div>
+        <div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo Engine</a> & <a
+                target="_blank" rel="noopener" href="https://github.com/korilin/hexo-theme-particle">Particle Theme</a></div>
+        
+    </div>
+
+</footer>
+
+<script src="/js/highlight.min.js"></script>
+<script src="/js/particle.js"></script>
+                </div>
+            </div>
+        </transition>
+    </div>
+
+    <script>
+    new Vue({
+        el: "#layout",
+        data: {
+            show_page: false,
+            onload_menu: false,
+            menu_show: false,
+            card_top: 100
+        },
+        created: function () {
+            var that = this
+            window.onload = function () {
+                that.show_page = true
+                document.getElementById("loadcontent").style.opacity = 0
+                setTimeout(function () {
+                    document.getElementById("loadleft").style.width = 0
+                    document.getElementById("loadright").style.width = 0
+                }, 300)
+                setTimeout(function () {
+                    document.getElementById("loading").style = "display:none"
+                }, 600)
+            }
+        },
+        mounted: function () {
+            var that = this
+            window.addEventListener('scroll', function (e) {
+                that.menu_show = false
+            })
+        },
+        methods: {
+            home_click: function () {
+                window.scrollTo({
+                    top: window.innerHeight - 80,
+                    behavior: "smooth",
+                });
+            }
+        }
+    })
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: 'hexo-theme-particle',      // The repository of store comments,
+        owner: 'korilin',
+        admin: ['korilin'],
+        language: 'zh-CN',
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: true  // Facebook-like distraction free mode
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="ch-zh ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yyMoming || 关键字：mutable</title>
+    <meta name="author" content="Moming">
+    <meta name="description" content="一个爱吃的小羊羊 ">
+    <meta name="keywords" content=" ">
+    <link rel="icon" href="/images/1.jpg">
+    <link rel="stylesheet" href="/css/antd.min.css">
+    
+    <link rel="stylesheet" href="/css/maiden-theme.css">
+    
+    <script src="/js/vue.js"></script>
+    <script src="/js/antd.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+    <div id="loading"
+        style="height: 100vh; width: 100%; position: fixed;display: flex;z-index: 200; justify-content: space-between;">
+        <div id="loadleft" style="width: 50%;background-color: #ffffff;transition: width 0.6s ease-out;"></div>
+        <div id="loadright" style="width: 50%;background-color: #ffffff;transition: width 0.6s ease-out;"></div>
+        <div
+            style="position: fixed; height: 100vh; width: 100%;display: flex;justify-content: center;align-items: center;">
+            <div id="loadcontent"
+                style="width:400px;height:400px;padding:50px;border-radius:50%;display:flex;justify-content:center;align-items:center;border:solid 10px#a3ddfb; text-align:center;opacity:1;transition:opacity 0.3s ease-out;">
+                <div>
+                    <h2>LOADING...</h2>
+                    <p>加载过慢请开启缓存(浏览器默认开启)</p>
+                    <div>
+                        <img src="/dancingkitty.gif" alt="loading">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="layout">
+        <transition name="into">
+            <div v-show="show_page" style="display: none;">
+                <div id="menu_show">
+                     
+<nav id="menu">
+    <div class="desktop-menu">
+        <a href="/">
+            <span class="title">yyMoming</span>
+        </a>
+        
+        <a href="/">
+            <span>
+                <a-icon type="home" theme="filled" />
+            </span>
+            <span>home</span>
+        </a>
+        
+        <a href="/about/">
+            <span>
+                <a-icon type="idcard" theme="filled" />
+            </span>
+            <span>about</span>
+        </a>
+        
+        <a href="/archives/">
+            <span>
+                <a-icon type="folder" theme="filled" />
+            </span>
+            <span>archives</span>
+        </a>
+        
+        <a href="/categories/">
+            <span>
+                <a-icon type="book" theme="filled" />
+            </span>
+            <span>categories</span>
+        </a>
+        
+        <a href="/tags/">
+            <span>
+                <a-icon type="tags" theme="filled" />
+            </span>
+            <span>tags</span>
+        </a>
+        
+    </div>
+
+    <div :class="'phone-menu ' + menu_show" id="phone-menu">
+        <div :class="'title'" @click="menu_show=!menu_show">
+            <span style="margin-right: 10px;">
+                <a-icon type="appstore" theme="filled" />
+            </span>
+            <span>yyMoming</span>
+        </div>
+        <div class="items" v-show="menu_show">
+            
+            <a href="/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="home" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">home</div>
+                </div>
+            </a>
+            
+            <a href="/about/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="idcard" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">about</div>
+                </div>
+            </a>
+            
+            <a href="/archives/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="folder" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">archives</div>
+                </div>
+            </a>
+            
+            <a href="/categories/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="book" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">categories</div>
+                </div>
+            </a>
+            
+            <a href="/tags/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="tags" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">tags</div>
+                </div>
+            </a>
+            
+        </div>
+        <div class="curtain" v-show="menu_show"></div>
+    </div>
+
+</nav>
+                </div>
+
+                <div id="main">
+                     
+<link rel="stylesheet" href="/css/post-body.css">
+<div class="article">
+    <div>
+        <h1>关键字：mutable </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <a-icon type="calendar" theme="filled" />
+            </span>
+            2021/5/21
+        </span>
+
+        
+        <span class="category">
+            <a href="/categories/cpp基础">
+                <span class="icon">
+                    <a-icon type="book" theme="filled" />
+                </span>
+                cpp基础
+            </a>
+        </span>
+        
+
+        
+
+        <span class="tags">
+            <span class="icon">
+                <a-icon type="tags" theme="filled" />
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/c++" style=color:#ff7d73>
+                    c++
+                </a>
+            </span>
+            
+        </span>
+        
+    </div>
+
+    <div class="content" v-pre>
+        <h1 id="关键字：mutable"><a href="#关键字：mutable" class="headerlink" title="关键字：mutable"></a>关键字：mutable</h1><span id="more"></span>
+
+<h3 id="1-Mutable"><a href="#1-Mutable" class="headerlink" title="1. Mutable"></a>1. Mutable</h3><p>​    1）<code>mutable</code> 的中文意思是 “可变的，易变的”，跟 <code>constant</code>是反义词。C++中为了突破 <font color='green'><code>const</code></font> 的限制涉及了<font color='green'><code>mutable</code></font>。被 <font color='green'><code>mutable</code></font> 修饰的变量，将永远处于可变的状态，即使是在 <font color='green'><code>const</code></font> 函数中。</p>
+<p>​    2）C++ 中，不可变的变量，称为常量，使用 <font color='green'><code>const  </code></font> 来修饰。但通常将 <font color='green'><code>const</code></font> 和 <font color='green'><code>mutable</code></font> 联用，会让人疑惑，到底可变还是不可变。</p>
+<blockquote>
+<p>事实上，<font color='green'><code>mutable</code></font> 是用来修饰一个 <font color='green'><code>const</code></font> 实例的部分可变成员的。</p>
+<ul>
+<li>二进制层面的 <font color='green'><code>const</code></font> ，就是绝对常量，在任何情况下不可修改（除了使用<font color='green'><code>const_cast</code></font>。</li>
+<li>引入了 <font color='green'><code>mutable</code></font> 之后，C++ 可以有逻辑层面的 <font color='green'><code>const</code></font>，即对于一个常量实例来说，外部观察它是常量不可修改，但内部仍然可以存在非常量数据成员。</li>
+</ul>
+</blockquote>
+<p><font color='orange'><code>Example 1</code></font></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Test</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">int</span> a;</span><br><span class="line">    <span class="keyword">mutable</span> <span class="keyword">int</span> b;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">Test</span> <span class="title">test</span> =</span> &#123;<span class="number">1</span>,<span class="number">2</span>&#125;;</span><br><span class="line">test.a = <span class="number">10</span>;  # 编译错误</span><br><span class="line">test.b = <span class="number">20</span>;  # 允许访问</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Note：<font color='green'><code>mutable</code></font> 在类中只能修饰非静态数据成员。</p>
+</blockquote>
+<p><font color='orange'><code>Example 2</code></font></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="keyword">int</span> a;</span><br><span class="line">    <span class="keyword">mutable</span> <span class="keyword">int</span> b;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">func2</span><span class="params">()</span> <span class="keyword">const</span> </span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        a++;  # 编译错误，不允许修改a</span><br><span class="line">        b++;  <span class="meta"># mutable修饰后允许修改</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Note：</p>
+<ul>
+<li><font color='green'><code>const</code></font> 承诺的是一旦某个变量被其修饰，那么只要不使用强制转换 （<font color='green'><code>const_cast</code></font>），在任何情况下该变量的值都不会被改变，无论有意还是无意，而被 <font color='green'><code>const</code></font> 修饰的函数也一样，一旦某个函数被 <font color='green'><code>const</code></font> 修饰，那么它便不能直接或间接改变任何函数体以外的变量的值，即使是调用一个可能造成这种改变的函数都不行。这种承诺在语法上也作出严格的保证，任何可能违反这种承诺的行为都会被编译器检查出来。</li>
+<li><font color='green'><code>mutable</code></font> 的承诺是如果某个变量被其修饰，那么这个变量将永远处于可变的状态，即使在一个 <font color='green'><code>const</code></font> 函数中。这与 <font color='green'><code>const</code></font> 形成了一个对称的定义，一个永远不变，而另外一个是永远可变。</li>
+</ul>
+</blockquote>
+<h3 id="2-Lambda-表达式中的-mutable"><a href="#2-Lambda-表达式中的-mutable" class="headerlink" title="2. Lambda 表达式中的 mutable"></a>2. Lambda 表达式中的 <code>mutable</code></h3><p>​    1) C++11 引入了 <font color='green'><code>Lambda</code></font> 表达式，可以凭此创建匿名函数。</p>
+<blockquote>
+<p>在 <font color='green'><code>Lambda</code></font> 表达式的设计中，捕获变量有几种方式；其中按值捕获（Caputre by Value）的方式不允许程序员在 <font color='green'><code>Lambda</code></font> 函数的函数体中修改捕获的变量。而以 <font color='green'><code>mutable</code></font> 修饰 <font color='green'><code>Lambda</code></font> 函数，则可以打破这种限制。</p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> x&#123;<span class="number">0</span>&#125;;</span><br><span class="line"><span class="keyword">auto</span> f1 = [=]() <span class="keyword">mutable</span> &#123;x = <span class="number">42</span>;&#125;;  <span class="comment">// okay, 创建了一个函数类型的实例</span></span><br><span class="line"><span class="keyword">auto</span> f2 = [=]()         &#123;x = <span class="number">42</span>;&#125;;  <span class="comment">// error, 不允许修改按值捕获的外部变量的值</span></span><br></pre></td></tr></table></figure>
+
+
+    </div>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <div id="comment">
+        <div id="gitalk-container">
+        </div>
+    </div>
+    
+</div>
+                     
+<footer id="footer">
+    <div class="footer-wrap">
+        <div>
+            © 2021 - 2021 yyMoming
+            <span class="footer-icon">
+                <a-icon type="flag" theme="filled" /></span>
+            @Moming
+        </div>
+        <div></div>
+        <div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo Engine</a> & <a
+                target="_blank" rel="noopener" href="https://github.com/korilin/hexo-theme-particle">Particle Theme</a></div>
+        
+    </div>
+
+</footer>
+
+<script src="/js/highlight.min.js"></script>
+<script src="/js/particle.js"></script>
+                </div>
+            </div>
+        </transition>
+    </div>
+
+    <script>
+    new Vue({
+        el: "#layout",
+        data: {
+            show_page: false,
+            onload_menu: false,
+            menu_show: false,
+            card_top: 100
+        },
+        created: function () {
+            var that = this
+            window.onload = function () {
+                that.show_page = true
+                document.getElementById("loadcontent").style.opacity = 0
+                setTimeout(function () {
+                    document.getElementById("loadleft").style.width = 0
+                    document.getElementById("loadright").style.width = 0
+                }, 300)
+                setTimeout(function () {
+                    document.getElementById("loading").style = "display:none"
+                }, 600)
+            }
+        },
+        mounted: function () {
+            var that = this
+            window.addEventListener('scroll', function (e) {
+                that.menu_show = false
+            })
+        },
+        methods: {
+            home_click: function () {
+                window.scrollTo({
+                    top: window.innerHeight - 80,
+                    behavior: "smooth",
+                });
+            }
+        }
+    })
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: 'hexo-theme-particle',      // The repository of store comments,
+        owner: 'korilin',
+        admin: ['korilin'],
+        language: 'zh-CN',
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: true  // Facebook-like distraction free mode
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+</body>
+
+</html>

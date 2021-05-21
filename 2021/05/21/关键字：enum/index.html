@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="ch-zh ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yyMoming || 关键字：enum</title>
+    <meta name="author" content="Moming">
+    <meta name="description" content="一个爱吃的小羊羊 ">
+    <meta name="keywords" content=" ">
+    <link rel="icon" href="/images/1.jpg">
+    <link rel="stylesheet" href="/css/antd.min.css">
+    
+    <link rel="stylesheet" href="/css/maiden-theme.css">
+    
+    <script src="/js/vue.js"></script>
+    <script src="/js/antd.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+    <div id="loading"
+        style="height: 100vh; width: 100%; position: fixed;display: flex;z-index: 200; justify-content: space-between;">
+        <div id="loadleft" style="width: 50%;background-color: #ffffff;transition: width 0.6s ease-out;"></div>
+        <div id="loadright" style="width: 50%;background-color: #ffffff;transition: width 0.6s ease-out;"></div>
+        <div
+            style="position: fixed; height: 100vh; width: 100%;display: flex;justify-content: center;align-items: center;">
+            <div id="loadcontent"
+                style="width:400px;height:400px;padding:50px;border-radius:50%;display:flex;justify-content:center;align-items:center;border:solid 10px#a3ddfb; text-align:center;opacity:1;transition:opacity 0.3s ease-out;">
+                <div>
+                    <h2>LOADING...</h2>
+                    <p>加载过慢请开启缓存(浏览器默认开启)</p>
+                    <div>
+                        <img src="/dancingkitty.gif" alt="loading">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="layout">
+        <transition name="into">
+            <div v-show="show_page" style="display: none;">
+                <div id="menu_show">
+                     
+<nav id="menu">
+    <div class="desktop-menu">
+        <a href="/">
+            <span class="title">yyMoming</span>
+        </a>
+        
+        <a href="/">
+            <span>
+                <a-icon type="home" theme="filled" />
+            </span>
+            <span>home</span>
+        </a>
+        
+        <a href="/about/">
+            <span>
+                <a-icon type="idcard" theme="filled" />
+            </span>
+            <span>about</span>
+        </a>
+        
+        <a href="/archives/">
+            <span>
+                <a-icon type="folder" theme="filled" />
+            </span>
+            <span>archives</span>
+        </a>
+        
+        <a href="/categories/">
+            <span>
+                <a-icon type="book" theme="filled" />
+            </span>
+            <span>categories</span>
+        </a>
+        
+        <a href="/tags/">
+            <span>
+                <a-icon type="tags" theme="filled" />
+            </span>
+            <span>tags</span>
+        </a>
+        
+    </div>
+
+    <div :class="'phone-menu ' + menu_show" id="phone-menu">
+        <div :class="'title'" @click="menu_show=!menu_show">
+            <span style="margin-right: 10px;">
+                <a-icon type="appstore" theme="filled" />
+            </span>
+            <span>yyMoming</span>
+        </div>
+        <div class="items" v-show="menu_show">
+            
+            <a href="/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="home" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">home</div>
+                </div>
+            </a>
+            
+            <a href="/about/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="idcard" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">about</div>
+                </div>
+            </a>
+            
+            <a href="/archives/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="folder" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">archives</div>
+                </div>
+            </a>
+            
+            <a href="/categories/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="book" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">categories</div>
+                </div>
+            </a>
+            
+            <a href="/tags/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="tags" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">tags</div>
+                </div>
+            </a>
+            
+        </div>
+        <div class="curtain" v-show="menu_show"></div>
+    </div>
+
+</nav>
+                </div>
+
+                <div id="main">
+                     
+<link rel="stylesheet" href="/css/post-body.css">
+<div class="article">
+    <div>
+        <h1>关键字：enum </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <a-icon type="calendar" theme="filled" />
+            </span>
+            2021/5/21
+        </span>
+
+        
+        <span class="category">
+            <a href="/categories/cpp基础">
+                <span class="icon">
+                    <a-icon type="book" theme="filled" />
+                </span>
+                cpp基础
+            </a>
+        </span>
+        
+
+        
+
+        <span class="tags">
+            <span class="icon">
+                <a-icon type="tags" theme="filled" />
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/c++" style=color:#ffa2c4>
+                    c++
+                </a>
+            </span>
+            
+        </span>
+        
+    </div>
+
+    <div class="content" v-pre>
+        <h2 id="关键字：enum"><a href="#关键字：enum" class="headerlink" title="关键字：enum"></a>关键字：enum</h2><span id="more"></span>
+
+<hr>
+<ol>
+<li><h3 id="枚举-enum-的定义"><a href="#枚举-enum-的定义" class="headerlink" title="枚举 enum 的定义"></a>枚举 enum 的定义</h3><p>枚举 <strong>enum</strong> 是一个类型（class），可以保存一组由用户刻画的值。</p>
+</li>
+</ol>
+<ol>
+<li><strong>enum</strong> 的具体定义：enum &lt;类型名&gt; {&lt;枚举常量表&gt;};</li>
+</ol>
+<ul>
+<li>关键字 <strong>enum</strong> —— 指明其后的标识符是一个枚举类型的名字。</li>
+<li>枚举常量表 —— 由枚举常量构成。”<em>枚举常量</em>“或称”<em>枚举成员</em>“，是以标识符形式表示的<strong>整型量</strong>，表示枚举类型的取值。枚举常量表列出枚举类型的所有取值，各枚举常量之间以”，”间隔，且必须各不相同。取值类型与条件表达式相同。</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># enum的具体定义方法</span></span><br><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">my_enum</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    my_enum1 = <span class="number">0</span>, <span class="comment">// 注意此处是逗号</span></span><br><span class="line">    my_enum2,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">week</span> &#123;</span>Sun=<span class="number">7</span>, Mon=<span class="number">1</span>, Tue, Wed, Thu, Fri, Sat&#125;;</span><br><span class="line"><span class="comment">//枚举常量Sun,Mon,Tue,Wed,Thu,Fri,Sat的值分别为7、1、2、3、4、5、6。</span></span><br></pre></td></tr></table></figure>
+
+<p>2）匿名方式定义 enum</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    my_enum1 = <span class="number">0</span>,</span><br><span class="line">    my_enum2,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>与 typedef 结合使用</li>
+</ol>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">enum</span> </span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    my_enum1 = <span class="number">0</span>,</span><br><span class="line">    my_enum2,</span><br><span class="line">&#125;my_enum;</span><br></pre></td></tr></table></figure>
+
+
+
+<ol start="2">
+<li><h3 id="enum-关键字的特点"><a href="#enum-关键字的特点" class="headerlink" title="enum 关键字的特点"></a>enum 关键字的特点</h3><ul>
+<li><p>全局作用域：<strong>enum</strong> 关键字的作用域是全局的，如果在enum A中声明了一个枚举类型 my)enum3，则无法在enum B中声明同样的枚举类型，如</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">A</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    my_enum3 = <span class="number">0</span>,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">B</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    my_enum3 = <span class="number">0</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>但是如果二者不在一个作用域里可以使用。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">A</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    my_enum3 = <span class="number">0</span>,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="class"><span class="keyword">enum</span> <span class="title">B</span></span></span><br><span class="line"><span class="class">    &#123;</span></span><br><span class="line">    	my_enum3 = <span class="number">20</span>,</span><br><span class="line">    &#125;;</span><br><span class="line">    cout &lt;&lt; my_enum3 &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line">&gt;&gt;&gt; <span class="number">20</span></span><br></pre></td></tr></table></figure></li>
+<li><p>取值特点：枚举常量代表该枚举类型的变量可能取的值，编译系统为每个枚举常量指定一个整数值，默认状态下，这个整数就是所列举元素的序号，序号从0开始。可以在定义枚举类型时为部分或全部枚举常量指定整数值，在指定值之前的枚举常量仍按默认方式取值，而指定值之后的枚举常量按依次加1的原则取值。 各枚举常量的值可以重复。（<font color='red'><strong>枚举类型不能是字符常量，也不能是整型常量</strong></font>）</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">letter_set</span> &#123;</span><span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;d&#x27;</span>,<span class="string">&#x27;F&#x27;</span>,<span class="string">&#x27;s&#x27;</span>,<span class="string">&#x27;T&#x27;</span>&#125;; <span class="comment">//枚举常量不能是字符常量</span></span><br><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">year_set</span>&#123;</span><span class="number">2000</span>,<span class="number">2001</span>,<span class="number">2002</span>,<span class="number">2003</span>,<span class="number">2004</span>,<span class="number">2005</span>&#125;; <span class="comment">//枚举常量不能是整型常量</span></span><br></pre></td></tr></table></figure></li>
+<li><p>隐式转换为其他类型</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">my_enum</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    my_enum1 = <span class="number">0</span>,</span><br><span class="line">    my_enum2,</span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> my_int = my_enum1;</span><br></pre></td></tr></table></figure></li>
+<li><p>传统 <strong>enum</strong> 无法指定底层所用的数据类型</p>
+</li>
+</ul>
+</li>
+<li><h3 id="enum-的相关操作"><a href="#enum-的相关操作" class="headerlink" title="enum 的相关操作"></a>enum 的相关操作</h3><ul>
+<li><p>枚举变量的使用</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">my_enum</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    my_enum1 = <span class="number">0</span>,</span><br><span class="line">    my_enum2,</span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line">my_enum m1, m2;</span><br></pre></td></tr></table></figure></li>
+<li><p>赋值操作</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cout &lt;&lt; m1 &lt;&lt; endl; <span class="comment">// 结果是0m1 = my_enum; // 将枚举常量值赋给枚举变量cout &lt;&lt; m1 &lt;&lt; endl; // 结果是1int i = m1; // 给整形变量赋值</span></span><br></pre></td></tr></table></figure></li>
+<li><p>运算：==、&lt;、&gt;、&lt;=、&gt;=、!=</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//比较同类型枚举变量m1，m2是否相等if (m1==m2) cout&lt;&lt;&quot;相等&quot;；//输出的是变量color3与WHITE的比较结果，结果为1cout&lt;&lt; (m1 &lt; my_enum2);</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><h3 id="C-11-中-enum-class-和-enum-struct"><a href="#C-11-中-enum-class-和-enum-struct" class="headerlink" title="C++ 11 中 enum  class 和 enum struct"></a>C++ 11 中 enum  class 和 enum struct</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="keyword">class</span> <span class="title">A</span>&#123;</span>    my_enum3 = <span class="number">0</span>,&#125;;<span class="class"><span class="keyword">enum</span> <span class="keyword">class</span> <span class="title">B</span>&#123;</span>    my_enum3 = <span class="number">0</span>,&#125;;<span class="class"><span class="keyword">enum</span> <span class="title">C</span>&#123;</span>    my_enum3 = <span class="number">0</span>,&#125;;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>enum class</strong>（与enum struct等同）解决了传统 enum 关键字作用域问题（<u>不能重复定义枚举常量表</u>）</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">A a = A::my_enum3;B b = B::my_enum3;</span><br></pre></td></tr></table></figure></li>
+<li><p><strong>enum class</strong> 可以指定底层数据类型</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enum class A: int /** 每个枚举都是int类型的 */&#123;    num = 0,&#125;;enum class B: unsigned char /** 每个枚举都是unsigned char类型的 */&#123;    num = 0,&#125;;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol start="5">
+<li><h3 id="类中的枚举类型"><a href="#类中的枚举类型" class="headerlink" title="类中的枚举类型"></a>类中的枚举类型</h3><p>当希望某些常量只能在类中有效。由于 #define 定义的宏常量是全局的，不能达到目的，于是可以采用 const 关键字来修饰数据成员。<strong>然而，const 数据成员只是在某个对象生存期内是常量，而对于整个类而言是可变的，因为类可以创建多个对象，不同的对象的 const 数据成员值是可以不一样的。</strong></p>
+<p><strong><u>在C++ 11标准前，不能在类内声明中初始化 const 数据成员。</u></strong></p>
+<p>若要在类内建立恒定的常量可以使用枚举常量来实现。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span>&#123;</span><span class="keyword">public</span>:    <span class="keyword">typedef</span> <span class="class"><span class="keyword">enum</span> &#123;</span>        BOY = <span class="number">0</span>,        GIRL    &#125;SexType;&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Tips：1）枚举常量不会占用对象的存储空间，在编译时会被全部求值。"><a href="#Tips：1）枚举常量不会占用对象的存储空间，在编译时会被全部求值。" class="headerlink" title="Tips：1）枚举常量不会占用对象的存储空间，在编译时会被全部求值。"></a><font color='green'>Tips：</font>1）枚举常量不会占用对象的存储空间，在编译时会被全部求值。</h3><h3 id="2）枚举常量的隐含数据类型是整数，最大值有限，-不能表示浮点数。"><a href="#2）枚举常量的隐含数据类型是整数，最大值有限，-不能表示浮点数。" class="headerlink" title="2）枚举常量的隐含数据类型是整数，最大值有限， 不能表示浮点数。"></a>2）枚举常量的隐含数据类型是整数，最大值有限， 不能表示浮点数。</h3></li>
+</ol>
+</li>
+</ol>
+
+    </div>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <div id="comment">
+        <div id="gitalk-container">
+        </div>
+    </div>
+    
+</div>
+                     
+<footer id="footer">
+    <div class="footer-wrap">
+        <div>
+            © 2021 - 2021 yyMoming
+            <span class="footer-icon">
+                <a-icon type="flag" theme="filled" /></span>
+            @Moming
+        </div>
+        <div></div>
+        <div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo Engine</a> & <a
+                target="_blank" rel="noopener" href="https://github.com/korilin/hexo-theme-particle">Particle Theme</a></div>
+        
+    </div>
+
+</footer>
+
+<script src="/js/highlight.min.js"></script>
+<script src="/js/particle.js"></script>
+                </div>
+            </div>
+        </transition>
+    </div>
+
+    <script>
+    new Vue({
+        el: "#layout",
+        data: {
+            show_page: false,
+            onload_menu: false,
+            menu_show: false,
+            card_top: 100
+        },
+        created: function () {
+            var that = this
+            window.onload = function () {
+                that.show_page = true
+                document.getElementById("loadcontent").style.opacity = 0
+                setTimeout(function () {
+                    document.getElementById("loadleft").style.width = 0
+                    document.getElementById("loadright").style.width = 0
+                }, 300)
+                setTimeout(function () {
+                    document.getElementById("loading").style = "display:none"
+                }, 600)
+            }
+        },
+        mounted: function () {
+            var that = this
+            window.addEventListener('scroll', function (e) {
+                that.menu_show = false
+            })
+        },
+        methods: {
+            home_click: function () {
+                window.scrollTo({
+                    top: window.innerHeight - 80,
+                    behavior: "smooth",
+                });
+            }
+        }
+    })
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: 'hexo-theme-particle',      // The repository of store comments,
+        owner: 'korilin',
+        admin: ['korilin'],
+        language: 'zh-CN',
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: true  // Facebook-like distraction free mode
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+</body>
+
+</html>
